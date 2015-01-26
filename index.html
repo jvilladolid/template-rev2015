@@ -22,15 +22,30 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+	<!-- nivo slider -->
+    <link rel="stylesheet" href="nivoslider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivoslider/themes/default/default.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	slices: 10,
+        	pauseTime: 5000,
+        	controlNav: false,
+        	captionOpacity: 0.7
+        });
+    });
+    </script>
 </head>
 <body>
 	<div class="container">
 		<div class="site-title">
 			<a href="#">Site Title</a>
-			<small><a href="#">Site Subtitle or Department Name</a></small>
+			<small><a href="#">Student Development and Enrollment Services</a></small>
 		</div>
 	</div>
-	<nav class="navbar navbar-default">
+	<nav class="site-nav navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,7 +65,7 @@
 					<li><a href="#">FAQs</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
-				<p class="navbar-text navbar-right">
+				<p class="navbar-text navbar-right translate-button">
 					<a href="http://it.dev.sdes.ucf.edu/testing/translate" class="navbar-link">Translate
 						<img alt="translate icon" src="images/fff_page_world.png" />
 					</a>
@@ -58,6 +73,22 @@
 			</div>
 		</div>
 	</nav>
+
+	<div class="container site-billboard theme-default">
+		<div id="slider" class="nivoSlider">
+			<img src="images/billboard1.jpg" alt="" title="This is an example of a caption"/>
+			<img src="images/billboard2.jpg" alt="" />
+			<img src="images/billboard3.jpg" alt="" />
+			<img src="images/billboard4.jpg" alt="" title="#htmlcaption" />
+			<img src="images/billboard5.jpg" alt="" />
+			<img src="images/billboard6.jpg" alt="" />
+		</div>
+		<div id="htmlcaption" class="nivo-html-caption">
+			<p>
+				<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+			</p>
+		</div>
+	</div>
 
 	<div class="container site-content">
 		<div class="page-header">
@@ -67,9 +98,79 @@
 			</ul>
 			<h1>Page Title</h1>
 		</div>
-
 		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12 pull-right">
+				<table class="table table-condensed table-striped table-bordered">
+					<tbody>
+						<tr>
+							<th scope="row">Hours</th>
+							<td>
+								Mon-Thur: 8am - 6pm<br>
+								Fri: 8am - 5pm
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">Phone</th>
+							<td>407-823-5548</td>
+						</tr>
+						<tr>
+							<th scope="row">Fax</th>
+							<td>407-823-6356</td>
+						</tr>
+						<tr>
+							<th scope="row">Email</th>
+							<td><a href="mailto:asf@ucf.edu">asf@ucf.edu</a></td>
+						</tr>
+						<tr>
+							<th scope="row">Location</th>
+							<td><a href="http://map.ucf.edu/?show=52">Student Union 215</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<p>
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+					sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+					Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
+					commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+					ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+					Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+					magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+					facilisis luctus, metus
+				</p>
+				<p>
+					Aenean fermentum, elit eget tincidunt condimentum, eros
+					ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+					Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+					magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+					facilisis luctus, metus
+				</p>
+			</div>
 		</div>
+	</div>
+
+	<div class="container">
+		<nav class="navbar navbar-default site-nav-repeated">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a href="./">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Event &amp; Workshops</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<p class="nav navbar-text navbar-right icons">
+					<a href="#"><img src="images/facebook.png" alt="icon" title="Facebook"></a>
+					<a href="#"><img src="images/twitter.png" alt="icon" title="Twitter"></a>
+					<a href="#"><img src="images/youtube.png" alt="icon" title="YouTube"></a>
+					<a href="http://get.adobe.com/reader/"><img src="images/content-end-pdf.jpg" alt="icon" title="Get Adobe Reader"></a>
+				</p>
+			</div>
+		</nav>
 	</div>
 
 	<footer class="site-footer-container">
@@ -144,5 +245,6 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="https://assets.sdes.ucf.edu/scripts/sdes_main_ucf.js"></script>
 </body>
 </html>

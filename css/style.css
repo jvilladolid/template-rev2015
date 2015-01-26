@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 
 /* generics */
 
@@ -29,24 +28,55 @@ caption{
 	color: #777;
 }
 
-.navbar-default{
+@media (max-width: 992px){
+	.site-title small{
+		display: block;
+	}
+}
+
+.site-nav.navbar-default{
 	background-color: #fdf0b6;
 	border: 0;
 	box-shadow: 0 2px 4px #ccc;
+	margin-bottom: 2em;
 }
 
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-text,
-.navbar-default .navbar-link{
+.site-nav.navbar-default .navbar-nav > li > a,
+.site-nav.navbar-default .navbar-text,
+.site-nav.navbar-default .navbar-link{
 	color: #000;
 }
 
-.navbar-default .navbar-nav > li:hover{
+.site-nav.navbar-default .navbar-nav > li:hover{
 	background-color: #fff;
+}
+
+@media (max-width: 992px){
+	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
+		float: none!important;
+	}
+}
+
+.site-billboard #slider{
+	box-shadow: 0 2px 5px #666;
 }
 
 .site-content{
 	min-height: 425px;
+}
+
+.site-nav-repeated{
+	border: 0;
+	margin: 0 0 3em 0;
+}
+
+.site-nav-repeated .icons{
+	margin-right: 0.5em;
+}
+
+.site-nav-repeated .icons img{
+	margin-left: 4px;
+	border: 1px solid #ccc;
 }
 
 footer.site-footer-container{
@@ -91,7 +121,6 @@ footer.site-footer-container{
 	text-decoration: none;
 	color: #ccc;
 }
-
 
 /* classes */
 
