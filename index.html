@@ -13,7 +13,6 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" id="ucfhb-script" src="https://universityheader.ucf.edu/bar/js/university-header.js"></script>
-	<script type="text/javascript" src="https://assets.sdes.ucf.edu/plugins/nivoslider/jquery.nivo.slider.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,8 +23,8 @@
 	<![endif]-->
 
 	<!-- nivo slider -->
-    <link rel="stylesheet" href="nivoslider/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="nivoslider/themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivoslider/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivoslider/themes/default/default.css" type="text/css" media="screen" />
 </head>
 <body>
 	<!-- header -->
@@ -438,6 +437,88 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h2>Full Width Form</h2>
+				</div>
+				<form id="full-width">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Form Legend Replacement
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-4 col-xs-12">
+									<p>
+										Pellentesque habitant morbi tristique senectus et netus et malesuada
+										fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies
+										eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+										Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+									</p>
+								</div>
+								<div class="col-md-8 col-xs-12">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="r">Requester Name</label>
+												<input type="text" name="r" id="r" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="doo">Department Or Organization</label>
+												<input type="text" name="doo" id="doo" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="phone">Phone Number</label>
+												<input type="text" name="phone" id="phone" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="email">Email Address</label>
+												<input type="text" name="email" id="email" class="form-control">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label>Classification/Purpose</label>
+										<div class="radio">
+											<label for="rso">
+												<input type="radio" name="classification" id="rso" value="rso">
+												Registered Student Organization or SGA/SGA Affiliated Agency
+											</label>
+										</div>
+										<div class="radio">
+											<label for="staff">
+												<input type="radio" name="classification" id="staff" value="staff">
+												UCF Department
+											</label>
+										</div>
+										<div class="radio">
+											<label for="thesis">
+												<input type="radio" name="classification" id="thesis" value="thesis">
+												Thesis Defense
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jumbotron text-right">
+						<input type="submit" value="Submit Form" class="btn btn-lg btn-default">
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 
 	<!-- repeated navigation, social media -->
@@ -542,17 +623,34 @@
 	</footer>
 
 	<!-- js -->
-	<script type="text/javascript" src="https://assets.sdes.ucf.edu/scripts/sdes_main_ucf.js"></script>
-    <script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider({
-        	slices: 10,
-        	pauseTime: 5000,
-        	controlNav: false,
-        	captionOpacity: 0.7
-        });
-    });
-    </script>
+	<script type="text/javascript" src="js/sdes_main_ucf.js"></script>
+	<script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
+	<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			slices: 10,
+			pauseTime: 5000,
+			controlNav: false,
+			captionOpacity: 0.7
+		});
+	});
+
+	$(function(){
+		$('#full-width').validate({
+			rules: {
+				r: "required",
+				phone: "required",
+				email: { required: true, email: true },
+				classification: "required"
+			},
+			errorPlacement: function(error, element) {
+                element = element.parents(".form-group:first");
+	            error.appendTo(element);
+	        }
+		});
+	})
+	</script>
 </body>
 </html>

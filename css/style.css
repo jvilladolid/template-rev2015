@@ -256,6 +256,12 @@ footer.site-footer-container{
 
 /* generic classes ------------------------------------------------------------------------------------------------- */
 
+form .jumbotron{
+	background-color: #fffbec;
+	border: 1px solid #faebcc;
+	padding: 2em;
+}
+
 label.error{
 	color: #f00;
 	font-style: italic;
