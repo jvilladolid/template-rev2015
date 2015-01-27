@@ -28,12 +28,6 @@ caption{
 	color: #777;
 }
 
-@media (max-width: 992px){
-	.site-title small{
-		display: block;
-	}
-}
-
 .site-nav.navbar-default{
 	background-color: #fdf0b6;
 	border: 0;
@@ -49,12 +43,6 @@ caption{
 
 .site-nav.navbar-default .navbar-nav > li:hover{
 	background-color: #fff;
-}
-
-@media (max-width: 992px){
-	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
-		float: none!important;
-	}
 }
 
 .site-billboard #slider{
@@ -279,4 +267,28 @@ label.error{
 
 .panel-link:hover{
 	color: #333;
+}
+
+/* responsive tweaks ----------------------------------------------------------------------------------------------- */
+
+@media (max-width: 992px){ /* medium to large breakpoint */
+	.site-title small{
+		display: block;
+	}
+
+	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
+		float: none!important;
+	}
+}
+
+@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
+  .staff img, .news img{
+    width: auto;
+    margin: 1em auto;
+    float: none;
+  }
+
+  .staff .staff-content, .news .news-content{
+    margin: 0;
+  }
 }
