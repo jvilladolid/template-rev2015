@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* generics */
+/* generics -------------------------------------------------------------------------------------------------------- */
 
 body{
 	background: #fff url('../images/ucf.png') repeat-x 0 20px;
@@ -11,7 +11,7 @@ caption{
 	font-size: 1.5em;
 }
 
-/* specific site elements */
+/* specific site elements ------------------------------------------------------------------------------------------ */
 
 .site-title{
 	font-size: 3.5em;
@@ -65,9 +65,12 @@ caption{
 	min-height: 425px;
 }
 
+.site-content-end{
+	margin: 3em auto 1em;
+}
+
 .site-nav-repeated{
 	border: 0;
-	margin: 0 0 3em 0;
 }
 
 .site-nav-repeated .icons{
@@ -122,9 +125,158 @@ footer.site-footer-container{
 	color: #ccc;
 }
 
-/* classes */
+/* components ------------------------------------------------------------------------------------------------------ */
+
+/* staff listing */
+
+.staff:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 2em;
+}
+
+.staff img{
+	width: 125px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px #ccc;
+	border: 3px solid #fff;
+}
+
+.staff:hover img{
+	border-width: 2px;
+}
+
+.staff .staff-content{
+	margin-left: 150px;
+}
+
+.staff-role{
+	border-bottom: 1px dotted #888;
+	clear: both;
+	font-size: 2.5em;
+	margin-bottom: 0.666em;
+	padding-bottom: 0.25em;
+}
+
+.staff .staff-name{
+	font-size: 2em;
+}
+
+.staff .staff-title{
+	font-size: 1.75em;
+}
+
+.staff .staff-email,
+.staff .staff-phone{
+	font-size: 1.333em;
+}
+
+.staff .staff-details{
+	margin-top: 1em;
+	overflow: hidden;
+}
+
+.staff .staff-more{
+	font-size: 0.75em;
+}
+
+/* news article listing */
+
+.news:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.news img{
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 3px #ccc;
+}
+
+.news-content{
+	margin-left: 120px;
+}
+
+.news .news-title{
+	font-size: 2em;
+}
+
+.news .news-title a{
+	text-decoration: none;
+	padding-left: 15px;
+	background: url('../images/3bul.png') no-repeat center left;
+}
+
+.news .news-title a:hover{
+
+}
+
+.news .news-strapline{
+	font-size: 1.5em;
+}
+
+.news .datestamp {
+	margin: 0;
+	font-size: 0.9em;
+	color: #666;
+}
+
+.news .news-summary{
+	padding: 1.25em 0;
+}
+
+/* ucf calendar widget */
+
+.ucf-events .date {
+	background-color: #fdf0b6;
+	float: left;
+	width: 50px;
+	padding: 5px 0;
+	clear: both;
+}
+
+.ucf-events > li:nth-child(even){
+	background: #fcfcfc;
+}
+
+.ucf-events > li > .title{
+	font-size: 1.2em;
+}
+
+.ucf-events > li > .date > span {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.ucf-events > li > a{
+	font-size: .8em;
+	display: block;
+	margin-left: 65px;
+	margin-top: 3px;
+}
+
+.ucf-events .end{
+	clear: both;
+}
+
+/* generic classes ------------------------------------------------------------------------------------------------- */
 
 label.error{
 	color: #f00;
 	font-style: italic;
+}
+
+.panel-link{
+	color: #666;
+}
+
+.panel-link:hover{
+	color: #333;
 }

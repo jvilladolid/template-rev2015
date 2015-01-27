@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,25 +26,17 @@
 	<!-- nivo slider -->
     <link rel="stylesheet" href="nivoslider/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="nivoslider/themes/default/default.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider({
-        	slices: 10,
-        	pauseTime: 5000,
-        	controlNav: false,
-        	captionOpacity: 0.7
-        });
-    });
-    </script>
 </head>
 <body>
+	<!-- header -->
 	<div class="container">
 		<div class="site-title">
 			<a href="#">Site Title</a>
 			<small><a href="#">Student Development and Enrollment Services</a></small>
 		</div>
 	</div>
+
+	<!-- navigation -->
 	<nav class="site-nav navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
@@ -74,9 +66,9 @@
 		</div>
 	</nav>
 
+	<!-- nivo slider -->
 	<div class="container site-billboard theme-default">
 		<div id="slider" class="nivoSlider">
-			<img src="images/billboard1.jpg" alt="" title="This is an example of a caption"/>
 			<img src="images/billboard2.jpg" alt="" />
 			<img src="images/billboard3.jpg" alt="" />
 			<img src="images/billboard4.jpg" alt="" title="#htmlcaption" />
@@ -90,6 +82,7 @@
 		</div>
 	</div>
 
+	<!-- content area -->
 	<div class="container site-content">
 		<div class="page-header">
 			<ul class="nav nav-pills pull-right">
@@ -129,6 +122,12 @@
 				</table>
 			</div>
 			<div class="col-md-8 col-sm-8 col-xs-12">
+				<p class="lead">
+					Aenean fermentum, elit eget tincidunt condimentum, eros
+					ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+					Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+					magna eros eu erat.
+				</p>
 				<p>
 					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 					Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
@@ -149,9 +148,300 @@
 				</p>
 			</div>
 		</div>
+
+		<!-- media -->
+		<div class="row">
+			<div class="col-md-4 col-xs-12 pull-right">
+
+				<!-- event listing -->
+				<div class="page-header">
+					<h2>UCF Calendar Feed</h2>
+				</div>
+
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						Upcoming Events
+					</div>
+					<ul class="list-group ucf-events">
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">27</span>
+							</div>
+							<a class="title" href="#">Preparing for Career Expos</a>
+							<a href="#">Career Services and Experiential Learning: 115</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">27</span>
+							</div>
+							<a class="title" href="#">Handball Captain's Meeting</a>
+							<a href="#">Recreation and Wellness Center</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">27</span>
+							</div>
+							<a class="title" href="#">Setting a Positive Mindset</a>
+							<a href="#">Student Union: Cedar Key Meeting Room (Room 223)</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">27</span>
+							</div>
+							<a class="title" href="#">Social Networking Strategies</a>
+							<a href="#">Career Services and Experiential Learning: 115</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">27</span>
+							</div>
+							<a class="title" href="#">AustinCSI Information Session</a>
+							<a href="#">Career Services and Experiential Learning: 115</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">28</span>
+							</div>
+							<a class="title" href="#">Rapid HIV Testing Event</a>
+							<a href="#">Recreation and Wellness Center: Wellness Center Classroom</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">28</span>
+							</div>
+							<a class="title" href="#">Impressing the Recruiter</a>
+							<a href="#">Career Services and Experiential Learning: 121</a>
+							<div class="end"></div>
+						</li>
+						<li class="list-group-item">
+							<div class="date">
+								<span class="month">Jan</span>
+								<span class="day">28</span>
+							</div>
+							<a class="title" href="#">Ask a Doc - Careers in Health Care</a>
+							<a href="#">Health Center &amp; Pharmacy: 2nd Floor Conference Room</a>
+							<div class="end"></div>
+						</li>
+					</ul>
+					<div class="panel-heading">
+						<a href="#" class="panel-link">&raquo;More Events</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-xs-12">
+
+				<!-- staff listing -->
+				<div class="page-header">
+					<h2>Staff Member Listing (Col 8 Max)</h2>
+				</div>
+				<div class="staff">
+					<img src="https://directory.sdes.ucf.edu/image/161/thumbnail.jpg" alt="" class="img-responsive">
+					<div class="staff-content">
+						<div class="staff-name">
+							Richard Phillips
+						</div>
+						<div class="staff-title">
+							Director
+						</div>
+						<div class="staff-email">
+							<a href="mailto:richard.phillips@ucf.edu">richard.phillips@ucf.edu</a>
+						</div>
+						<div class="staff-details">
+							<p>
+								Aenean fermentum, elit eget tincidunt condimentum, eros
+								ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+								Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+								magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+								facilisis luctus, metus
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="staff">
+					<img src="http://rwc.sdes.ucf.edu/image/62" alt="thumb" class="img-responsive">
+					<div class="staff-content">
+						<div class="staff-name">
+							Dr. Brenda  Posey
+						</div>
+						<div class="staff-title">
+							Coordinator
+						</div>
+						<div class="staff-email">
+							<a href="mailto:bposey@ucf.edu">bposey@ucf.edu</a>
+						</div>
+						<div class="staff-details">
+							<p>
+								Aenean fermentum, elit eget tincidunt condimentum, eros
+								ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+								Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+								magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+								facilisis luctus, metus
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="staff">
+					<img src="https://directory.sdes.ucf.edu/image/2666/thumbnail.jpg" alt="thumb" class="img-responsive">
+					<div class="staff-content">
+						<div class="staff-name">
+							Katie Burroughs
+						</div>
+						<div class="staff-title">
+							Office Manager
+						</div>
+						<div class="staff-email">
+							<a href="mailto:katie.burroughs@ucf.edu">katie.burroughs@ucf.edu</a>
+						</div>
+						<div class="staff-details">
+							<p>
+								Aenean fermentum, elit eget tincidunt condimentum, eros
+								ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+								Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+								magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+								facilisis luctus, metus
+							</p>
+							<p>
+								Donec non enim in turpis pulvinar facilisis.
+								Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+								magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+								facilisis luctus, metus
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-xs-12 pull-right">
+
+				<!-- side menu -->
+				<div class="page-header">
+					<h2>Typical Side Menu</h2>
+				</div>
+
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<strong>Online Processes</strong>
+					</div>
+					<div class="list-group">
+						<a class="list-group-item" href="#">Change of Email Address</a>
+						<a class="list-group-item" href="#">Change of Major, Track, Minor</a>
+						<a class="list-group-item" href="#">Degree Verification Request</a>
+						<a class="list-group-item" href="#">Enrollment Verification</a>
+						<a class="list-group-item" href="#">Grade Forgiveness</a>
+						<a class="list-group-item" href="#">Readmission Application</a>
+						<a class="list-group-item" href="#">Senior Citizen Audit Request</a>
+						<a class="list-group-item" href="#">Transcript Request</a>
+						<a class="list-group-item" href="#">Transient Students</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-8 col-xs-12">
+
+				<!-- news Listing -->
+				<div class="page-header">
+					<h2>News Summary Listing (Col 8 Max)</h2>
+				</div>
+
+				<div class="news">
+					<img src="https://directory.sdes.ucf.edu/image/2777/thumbnail.jpg" class="img-responsive" alt="thumb">
+					<div class="news-content">
+						<div class="news-title bullets">
+							<a href="#">UCF Creed Contest Art on Display</a>
+						</div>
+						<div class="news-strapline">
+							Artworks Reflect the UCF Creed
+						</div>
+						<div class="datestamp">
+							Posted on Monday, January 26th, 2015 @ 11:45am by Judy Pardo
+						</div>
+						<div class="news-summary">
+							<p>
+								The Office of Student Rights and Responsibilities along with the UCF
+								Parent and Family Fund hosted the 5th Creed Art Contest in November
+								2014. All students were encouraged to submit original works of art 
+								that represented the UCF Creed values: Integrity, Scholarship, Community,
+								Creativity and Excellence.
+							</p>
+							<p>
+								<a href="https://directory.sdes.ucf.edu/article/1844">[Read More]</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="news">
+					<img src="https://directory.sdes.ucf.edu/image/2754/thumbnail.jpg" class="img-responsive" alt="thumb">
+					<div class="news-content">
+						<div class="news-title bullets">
+							<a href="#">UCF Downtown</a>
+						</div>
+						<div class="news-strapline">
+							More Opportunities Soon To Come
+						</div>
+						<div class="datestamp">
+							Posted on Tuesday, January 20th, 2015 @ 9:21am by Judy Pardo
+						</div>
+						<div class="news-summary">
+							<p>
+								Donec non enim in turpis pulvinar facilisis.
+								Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+								magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+								facilisis luctus, metus
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="news">
+					<img src="https://directory.sdes.ucf.edu/image/2706/thumbnail.jpg" class="img-responsive" alt="thumb">
+					<div class="news-content">
+						<div class="news-title bullets">
+							<a href="#">Social Justice and Advocacy </a>
+						</div>
+						<div class="news-strapline">
+							SDES Inclusive New Office
+						</div>
+						<div class="datestamp">
+							Posted on Wednesday, December 17th, 2014 @ 2:27pm by Judy Pardo
+						</div>
+						<div class="news-summary">
+							<p>
+								Donec non enim in turpis pulvinar facilisis.
+								Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+								magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+								facilisis luctus, metus
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<hr />
+
+				<div class="datestamp">
+					<a href="#">&raquo;News Archive</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="container">
+	<!-- repeated navigation, social media -->
+	<div class="container site-content-end">
 		<nav class="navbar navbar-default site-nav-repeated">
 			<div class="container-fluid">
 				<ul class="nav navbar-nav">
@@ -173,7 +463,10 @@
 		</nav>
 	</div>
 
+	<!-- footers -->
 	<footer class="site-footer-container">
+
+		<!-- main footer -->
 		<div class="site-footer">
 			<div class="container"> 
 				<div class="row">
@@ -230,6 +523,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- sub footer -->
 		<div class="site-sub-footer">
 			<div class="container">
 				<div class="row">
@@ -245,6 +540,19 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- js -->
 	<script type="text/javascript" src="https://assets.sdes.ucf.edu/scripts/sdes_main_ucf.js"></script>
+    <script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	slices: 10,
+        	pauseTime: 5000,
+        	controlNav: false,
+        	captionOpacity: 0.7
+        });
+    });
+    </script>
 </body>
 </html>
