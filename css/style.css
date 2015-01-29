@@ -259,6 +259,20 @@ footer.site-footer-container{
 	clear: both;
 }
 
+/* home buttons */
+
+.home > li a	{
+	background:#fdf0b6;
+	font-weight: bold;
+	color:black;
+	box-shadow: 0 2px 4px #ccc;
+	margin-bottom:10px;
+}
+
+.home > li a:hover	{
+	background:#fff;
+}
+
 /* generic classes ------------------------------------------------------------------------------------------------- */
 
 form .jumbotron{
