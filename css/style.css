@@ -45,6 +45,10 @@ caption{
 	background-color: #fff;
 }
 
+.site-nav .translate-button{
+	margin-right: 0;
+}
+
 .site-billboard #slider{
 	box-shadow: 0 2px 5px #666;
 	border-radius: 10px;
