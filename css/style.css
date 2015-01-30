@@ -273,6 +273,20 @@ footer.site-footer-container{
 	background:#fff;
 }
 
+/* block and pull quotes */
+
+blockquote	{
+	border:none;
+}
+
+blockquote.pull::before{
+	content:url('http://assets.sdes.ucf.edu/images/quotestart.png');
+}
+
+blockquote.pull::after{
+	content:url('http://assets.sdes.ucf.edu/images/pull.png');
+}
+
 /* generic classes ------------------------------------------------------------------------------------------------- */
 
 form .jumbotron{
