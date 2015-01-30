@@ -279,13 +279,54 @@ blockquote	{
 	border:none;
 }
 
-blockquote.pull::before{
+blockquote.pull:before {
 	content:url('http://assets.sdes.ucf.edu/images/quotestart.png');
 }
 
-blockquote.pull::after{
+blockquote.pull:after {
 	content:url('http://assets.sdes.ucf.edu/images/pull.png');
 }
+
+blockquote.pull {
+	line-height: 250%;
+}
+
+/* bullets */
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+h1.bullets:before, h2.bullets:before, h3.bullets:before, h4.bullets:before, ul.bullets li:before{
+	font-family: 'Glyphicons Halflings';
+	content:"\e080";
+	color:#c90;
+	font-size:75%;
+	padding-right:5px;
+}
+
+ul.bullets li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+ul.link-list li {
+	font-size:1.5em;
+}
+
+ul.link-list li a {
+	color:#999;
+}
+
+ul.link-list li a:hover	{
+	color:#ccc;
+	text-decoration: none;
+}
+
 
 /* generic classes ------------------------------------------------------------------------------------------------- */
 
