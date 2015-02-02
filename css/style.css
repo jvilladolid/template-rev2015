@@ -293,25 +293,22 @@ blockquote.pull {
 
 /* bullets */
 
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+.bullets	{
+	text-decoration: none;
+	padding-left: 15px;
+	background: url('../images/3bul.png') no-repeat center left;
 }
 
-h1.bullets:before, h2.bullets:before, h3.bullets:before, h4.bullets:before, ul.bullets li:before{
-	font-family: 'Glyphicons Halflings';
-	content:"\e080";
-	color:#c90;
-	font-size:75%;
-	padding-right:5px;
+ul.link-list.bullets	{
+	padding-left: 25px;
+	background: none;
+	margin-top: 15px;
 }
 
-ul.bullets li {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 1em;
-	text-indent: -1em;
+ul.link-list.bullets li {
+	list-style-type: none;
+	padding-left: 15px;
+	background: url('../images/3bul.png') no-repeat center left;
 }
 
 ul.link-list li {
