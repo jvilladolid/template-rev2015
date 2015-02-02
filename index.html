@@ -154,7 +154,9 @@
 					facilisis luctus, metus
 				</p>
 
-				<h2 class="bullets">Heading with .bullets</h2>
+				<div class="page-header">
+					<h2>Blockquote and Pull Quotes</h2>
+				</div>
 			
 				<div class="col-sm-6">
 					<blockquote>
@@ -170,6 +172,10 @@
 				</div>
 
 				<div class="clearfix"></div>
+
+				<div class="page-header">
+					<h2 class="bullets">Bullets and List Styles</h2>
+				</div>
 
 				<ul class="link-list bullets">
 					<li><a href="#">This is still .link-list.bullets</a></li>
@@ -548,6 +554,146 @@
 						<input type="submit" value="Submit Form" class="btn btn-lg btn-default">
 					</div>
 				</form>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8">
+				<div class="page-header">
+					<h2>Single-Column Form</h2>
+				</div>
+				<form id="full-width">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Form Legend Replacement
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="r">Requester Name</label>
+												<input type="text" name="r" id="r" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="doo">Department Or Organization</label>
+												<input type="text" name="doo" id="doo" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="phone">Phone Number</label>
+												<input type="text" name="phone" id="phone" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="email">Email Address</label>
+												<input type="text" name="email" id="email" class="form-control">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label>Classification/Purpose</label>
+										<div class="radio">
+											<label for="rso">
+												<input type="radio" name="classification" id="rso" value="rso">
+												Registered Student Organization or SGA/SGA Affiliated Agency
+											</label>
+										</div>
+										<div class="radio">
+											<label for="staff">
+												<input type="radio" name="classification" id="staff" value="staff">
+												UCF Department
+											</label>
+										</div>
+										<div class="radio">
+											<label for="thesis">
+												<input type="radio" name="classification" id="thesis" value="thesis">
+												Thesis Defense
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jumbotron text-right">
+						<input type="submit" value="Submit Form" class="btn btn-lg btn-default">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h2>Table Layouts</h2>
+				</div>
+				<h3>Basic Table (Replaces .grid)</h3>
+				<div class="table-responsive">
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr>
+								<th>Header</th>
+								<th>Header</th>
+								<th>Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3>Smaller Table (Replaces .grid.smaller)</h3>
+				<div class="table-responsive">
+					<table class="table table-hover table-striped table-condensed">
+						<thead>
+							<tr>
+								<th>Header</th>
+								<th>Header</th>
+								<th>Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
