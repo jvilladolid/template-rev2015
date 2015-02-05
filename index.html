@@ -121,13 +121,13 @@
 				</table>
 			</div>
 			<div class="col-md-8 col-sm-8 col-xs-12">
-				<ul class="nav nav-pills nav-stacked home col-xs-6">
+				<ul class="nav nav-pills nav-stacked home col-sm-6 col-xs-12">
 					<li><a href="#">Home Button</a></li>
 					<li><a href="#">Home Button</a></li>
 				</ul>
-				<ul class="nav nav-pills nav-stacked home col-xs-6">
+				<ul class="nav nav-pills nav-stacked home col-sm-6 col-xs-12">
 					<li><a href="#">Home Button</a></li>
-					<li><a href="#">Replaces .global-col2-x.home-button</a></li>
+					<li><a href="#">Replaces .home-button</a></li>
 				</ul>
 				<p class="lead">
 					Aenean fermentum, elit eget tincidunt condimentum, eros
@@ -158,18 +158,25 @@
 					<h2>Blockquote and Pull Quotes</h2>
 				</div>
 			
-				<div class="col-sm-6">
-					<blockquote>
-						Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
-						enim ac dui. <b>This is a blockquote.</b>
-					</blockquote>
-				</div>
-				<div class="col-sm-6">
-					<blockquote class="pull">
-						Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
-						enim ac dui. <b>This is a blockquote.pull</b>
-					</blockquote>
-				</div>
+				<blockquote>
+					<p>
+						Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+						sagittis tempus lacus enim ac dui. <b>This is a blockquote.</b>
+					</p>
+					<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				</blockquote>
+
+				<div class="clearfix"></div>
+
+				<h3>blockquote.pull</h3>
+				<blockquote class="pull">
+					<p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+					enim ac dui. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+					enim ac dui.Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+					enim ac dui.Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+					enim ac dui.Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+					enim ac dui.</p>
+				</blockquote>
 
 				<div class="clearfix"></div>
 
@@ -177,9 +184,9 @@
 					<h2 class="bullets">Bullets and List Styles</h2>
 				</div>
 
-				<ul class="link-list bullets">
+				<ul class="bullets">
 					<li><a href="#">This is still .link-list.bullets</a></li>
-					<li><a href="#">List item</a></li>
+					<li><a href="http://creed.sdes.ucf.edu/">The UCF Creed Website</a></li>
 					<li><a href="#">List item</a></li>
 				</ul>
 			</div>
@@ -397,7 +404,7 @@
 				<div class="news">
 					<img src="https://directory.sdes.ucf.edu/image/2777/thumbnail.jpg" class="img-responsive" alt="thumb">
 					<div class="news-content">
-						<div class="news-title bullets">
+						<div class="news-title">
 							<a href="#">UCF Creed Contest Art on Display</a>
 						</div>
 						<div class="news-strapline">
@@ -424,7 +431,7 @@
 				<div class="news">
 					<img src="https://directory.sdes.ucf.edu/image/2754/thumbnail.jpg" class="img-responsive" alt="thumb">
 					<div class="news-content">
-						<div class="news-title bullets">
+						<div class="news-title">
 							<a href="#">UCF Downtown</a>
 						</div>
 						<div class="news-strapline">
@@ -447,7 +454,7 @@
 				<div class="news">
 					<img src="https://directory.sdes.ucf.edu/image/2706/thumbnail.jpg" class="img-responsive" alt="thumb">
 					<div class="news-content">
-						<div class="news-title bullets">
+						<div class="news-title">
 							<a href="#">Social Justice and Advocacy </a>
 						</div>
 						<div class="news-strapline">
@@ -641,9 +648,10 @@
 				<div class="page-header">
 					<h2>Table Layouts</h2>
 				</div>
-				<h3>Basic Table (Replaces .grid)</h3>
+
 				<div class="table-responsive">
 					<table class="table table-hover table-striped">
+						<caption>.table .table-hover .table-striped (Replaces .grid)</caption>
 						<thead>
 							<tr>
 								<th>Header</th>
@@ -671,9 +679,9 @@
 					</table>
 				</div>
 
-				<h3>Smaller Table (Replaces .grid.smaller)</h3>
 				<div class="table-responsive">
 					<table class="table table-hover table-striped table-condensed">
+						<caption>.table .table-hover .table-striped .table-condensed (Replaces .grid.smaller)</caption>
 						<thead>
 							<tr>
 								<th>Header</th>
