@@ -121,6 +121,14 @@
 				</table>
 			</div>
 			<div class="col-md-8 col-sm-8 col-xs-12">
+				<ul class="nav nav-pills nav-stacked home col-xs-6">
+					<li><a href="#">Home Button</a></li>
+					<li><a href="#">Home Button</a></li>
+				</ul>
+				<ul class="nav nav-pills nav-stacked home col-xs-6">
+					<li><a href="#">Home Button</a></li>
+					<li><a href="#">Replaces .global-col2-x.home-button</a></li>
+				</ul>
 				<p class="lead">
 					Aenean fermentum, elit eget tincidunt condimentum, eros
 					ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
@@ -145,6 +153,35 @@
 					magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
 					facilisis luctus, metus
 				</p>
+
+				<div class="page-header">
+					<h2>Blockquote and Pull Quotes</h2>
+				</div>
+			
+				<div class="col-sm-6">
+					<blockquote>
+						Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+						enim ac dui. <b>This is a blockquote.</b>
+					</blockquote>
+				</div>
+				<div class="col-sm-6">
+					<blockquote class="pull">
+						Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus 
+						enim ac dui. <b>This is a blockquote.pull</b>
+					</blockquote>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="page-header">
+					<h2 class="bullets">Bullets and List Styles</h2>
+				</div>
+
+				<ul class="link-list bullets">
+					<li><a href="#">This is still .link-list.bullets</a></li>
+					<li><a href="#">List item</a></li>
+					<li><a href="#">List item</a></li>
+				</ul>
 			</div>
 		</div>
 
@@ -517,6 +554,191 @@
 						<input type="submit" value="Submit Form" class="btn btn-lg btn-default">
 					</div>
 				</form>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8">
+				<div class="page-header">
+					<h2>Single-Column Form</h2>
+				</div>
+				<form id="full-width">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							Form Legend Replacement
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="r">Requester Name</label>
+												<input type="text" name="r" id="r" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="doo">Department Or Organization</label>
+												<input type="text" name="doo" id="doo" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="phone">Phone Number</label>
+												<input type="text" name="phone" id="phone" class="form-control">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="email">Email Address</label>
+												<input type="text" name="email" id="email" class="form-control">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label>Classification/Purpose</label>
+										<div class="radio">
+											<label for="rso">
+												<input type="radio" name="classification" id="rso" value="rso">
+												Registered Student Organization or SGA/SGA Affiliated Agency
+											</label>
+										</div>
+										<div class="radio">
+											<label for="staff">
+												<input type="radio" name="classification" id="staff" value="staff">
+												UCF Department
+											</label>
+										</div>
+										<div class="radio">
+											<label for="thesis">
+												<input type="radio" name="classification" id="thesis" value="thesis">
+												Thesis Defense
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jumbotron text-right">
+						<input type="submit" value="Submit Form" class="btn btn-lg btn-default">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<div class="page-header">
+					<h2>Sidebar Image (340px)</h2>
+				</div>
+				<img src="images/thumbnail.jpg" class="img-responsive img-rounded center-block" alt="..." />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h2>Table Layouts</h2>
+				</div>
+				<h3>Basic Table (Replaces .grid)</h3>
+				<div class="table-responsive">
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr>
+								<th>Header</th>
+								<th>Header</th>
+								<th>Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3>Smaller Table (Replaces .grid.smaller)</h3>
+				<div class="table-responsive">
+					<table class="table table-hover table-striped table-condensed">
+						<thead>
+							<tr>
+								<th>Header</th>
+								<th>Header</th>
+								<th>Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="page-header">
+					<h2>Image Thumbnails (replaces JBox)</h2>
+				</div>
+
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/thumbnail.jpg" alt="...">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>
+								Description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. <strong>These images are 340px wide.</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/thumbnail.jpg" alt="...">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>
+								Description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/thumbnail.jpg" alt="...">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>
+								Description. Cras justo odio, dapibus ac facilisis in, egestas eget quam. 
+							</p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

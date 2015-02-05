@@ -259,6 +259,72 @@ footer.site-footer-container{
 	clear: both;
 }
 
+/* home buttons */
+
+.home > li a	{
+	background:#fdf0b6;
+	font-weight: bold;
+	color:black;
+	box-shadow: 0 2px 4px #ccc;
+	margin-bottom:10px;
+}
+
+.home > li a:hover	{
+	background:#fff;
+}
+
+/* block and pull quotes */
+
+blockquote	{
+	border:none;
+}
+
+blockquote.pull:before {
+	content:url('http://assets.sdes.ucf.edu/images/quotestart.png');
+}
+
+blockquote.pull:after {
+	content:url('http://assets.sdes.ucf.edu/images/pull.png');
+}
+
+blockquote.pull {
+	line-height: 250%;
+}
+
+/* bullets */
+
+.bullets	{
+	text-decoration: none;
+	padding-left: 15px;
+	background: url('../images/3bul.png') no-repeat center left;
+}
+
+ul.link-list.bullets	{
+	padding-left: 25px;
+	background: none;
+	margin-top: 15px;
+}
+
+ul.link-list.bullets li {
+	list-style-type: none;
+	padding-left: 15px;
+	background: url('../images/3bul.png') no-repeat center left;
+}
+
+ul.link-list li {
+	font-size:1.5em;
+}
+
+ul.link-list li a {
+	color:#999;
+}
+
+ul.link-list li a:hover	{
+	color:#ccc;
+	text-decoration: none;
+}
+
+
 /* generic classes ------------------------------------------------------------------------------------------------- */
 
 form .jumbotron{
