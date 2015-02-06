@@ -31,6 +31,7 @@ caption{
 .site-nav.navbar-default{
 	background-color: #fdf0b6;
 	border: 0;
+	border-radius:0;
 	box-shadow: 0 2px 4px #ccc;
 	margin-bottom: 2em;
 }
@@ -358,4 +359,69 @@ label.error{
   .staff .staff-content, .news .news-content{
     margin: 0;
   }
+}
+
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+
+.yamm .container {
+  position: relative;
+}
+
+.yamm .dropdown-menu {
+  left: auto;
+  background: -webkit-linear-gradient(#fdf0b6, #ffffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fdf0b6, #ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fdf0b6, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fdf0b6, #ffffff); /* Standard syntax */
+  /*background:#fdf0b6;*/
+  border:none;
+  border-top:2px solid #ddd;
+}
+
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu li p {
+	font-size:125%;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu li p a {
+	color:#666;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu li p a:hover {
+	color:#333;
+	text-decoration: none;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu li > a {
+	font-size:90%;
+	color:#666;
+	text-decoration: underline;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu li > a:hover	{
+	color:#333;
+}
+
+.yamm ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
 }
