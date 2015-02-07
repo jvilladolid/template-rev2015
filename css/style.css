@@ -362,66 +362,61 @@ label.error{
 }
 
 
-/*!
- * Yamm!3 - Yet another megamenu for Bootstrap 3
- * http://geedmo.github.com/yamm3
- * 
- * @geedmo - Licensed under the MIT license
- */
-.yamm .nav,
-.yamm .collapse,
-.yamm .dropup,
-.yamm .dropdown {
-  position: static;
+/* Yamm!3 - Yet another megamenu for Bootstrap 3 / http://geedmo.github.com/yamm3 
+ * @geedmo - Licensed under the MIT license */
+
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+	position: static;
 }
 
 .yamm .container {
-  position: relative;
+	position: relative;
 }
 
 .yamm .dropdown-menu {
-  left: auto;
-  background: -webkit-linear-gradient(#fdf0b6, #ffffff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fdf0b6, #ffffff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fdf0b6, #ffffff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fdf0b6, #ffffff); /* Standard syntax */
-  /*background:#fdf0b6;*/
-  border:none;
-  border-top:2px solid #ddd;
+	left: auto;
+	background: #fdf8e3;
+	border: 0;
+	border-top: 1px solid #ccc;
+	opacity: 0.95;
+	min-height: 370px;
 }
 
 .yamm .yamm-content {
-  padding: 20px 30px;
+	padding: 20px 30px;
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
-  left: 0;
-  right: 0;
+	left: 0;
+	right: 0;
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu li p {
-	font-size:125%;
+	font-size: 125%;
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu li p a {
-	color:#666;
+	color: #666;
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu li p a:hover {
-	color:#333;
-	text-decoration: none;
-}
-
-.yamm .dropdown.yamm-fw .dropdown-menu li > a {
-	font-size:90%;
-	color:#666;
+	color: #333;
 	text-decoration: underline;
 }
 
-.yamm .dropdown.yamm-fw .dropdown-menu li > a:hover	{
-	color:#333;
+.yamm .dropdown.yamm-fw .dropdown-menu li > a {
+	font-size: 90%;
+	color: #666;
+	text-decoration: none;
 }
 
-.yamm ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
+.yamm .dropdown.yamm-fw .dropdown-menu li > a:hover	{
+	color: #333;
+	text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	background-color: #fdfbf5;
 }
