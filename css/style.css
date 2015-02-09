@@ -2,6 +2,16 @@
 
 /* generics -------------------------------------------------------------------------------------------------------- */
 
+a{
+	/* color: #922; */
+	text-decoration: none;
+}
+
+a:hover, a:focus{
+	/* color: #5a1414; */
+	text-decoration: underline;
+}
+
 body{
 	background: #fff url('../images/ucf.png') repeat-x 0 20px;
 	background-size: 100% 139px;
@@ -9,6 +19,16 @@ body{
 
 caption{
 	font-size: 1.5em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.news-title a, .ucf-events > li > a{
+	color: #666;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+.news-title a:hover, .ucf-events > li > a:hover{
+	color: #333;
 }
 
 iframe[src="about:blank"]{
@@ -210,7 +230,6 @@ footer.site-footer-container{
 }
 
 .news .news-title a{
-	text-decoration: none;
 	padding-left: 15px;
 	background: url('../images/3bul.png') no-repeat center left;
 }
