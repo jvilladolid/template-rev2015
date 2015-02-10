@@ -3,12 +3,12 @@
 /* generics -------------------------------------------------------------------------------------------------------- */
 
 a{
-	/* color: #922; */
+	color: #922;
 	text-decoration: none;
 }
 
 a:hover, a:focus{
-	/* color: #5a1414; */
+	color: #5a1414;
 	text-decoration: underline;
 }
 
@@ -41,25 +41,35 @@ li:empty{
 
 /* specific site elements ------------------------------------------------------------------------------------------ */
 
+.container.header{
+	margin: 2.5em auto 1.5em;
+}
+
 .site-title{
 	font-size: 3.5em;
-	padding: 0.5em 0 0.2em;
+	letter-spacing: -2px;
+	line-height: 1em;
 }
 
-.site-title a, .site-title a:hover{
+.site-subtitle{
+	color: #777;
+	display: inline-block;
+	font-size: 0.4em;
+	letter-spacing: 0;
+	line-height: 1.0em;
+	padding-left: 0.5em;
+}
+
+.site-title a, .site-title a:hover,
+.site-subtitle a, .site-subtitle a:hover{
 	color: inherit;
 	text-decoration: none;
-}
-
-.site-title small{
-	font-size: 0.5em;
-	color: #777;
 }
 
 .site-nav.navbar-default{
 	background-color: #fdf0b6;
 	border: 0;
-	border-radius:0;
+	border-radius: 0;
 	box-shadow: 0 2px 4px #ccc;
 	margin-bottom: 2em;
 }
@@ -343,6 +353,15 @@ ul.bullets > li > a:hover {
 	color: #333;
 }
 
+/* media */
+
+.media:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 1em;
+}
+
 /* generic classes ------------------------------------------------------------------------------------------------- */
 
 form .jumbotron{
@@ -393,7 +412,7 @@ label.error{
 a.external{
 	padding-right: 20px;
 	padding-left: 0;
-	background: url('https://assets.sdes.ucf.edu/images/icons/ex-link.png') right center no-repeat;
+	background: url('../images/ex-link.png') right center no-repeat;
 }
 
 a[href$='.pdf'].noicon{
@@ -403,65 +422,41 @@ a[href$='.pdf'].noicon{
 
 a[href$='.pdf']{
 	padding: 1px 0 0 20px;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_acrobat.png') left center no-repeat;
+	background: url('../images/fff_page_white_acrobat.png') left center no-repeat;
 }
 
 h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
 	padding-right: 20px;
 	padding-left: 0;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_acrobat.png') right center no-repeat;
+	background: url('../images/fff_page_white_acrobat.png') right center no-repeat;
 }
 
 a[href$='.doc'], a[href$='.docx'], a[href$='.rtf']{
 	padding: 1px 0 0 20px;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_word.png') left center no-repeat;
+	background: url('../images/fff_page_white_word.png') left center no-repeat;
 }
 
 a[href$='.xls'], a[href$='.xlsx'], a[href$='.xlsm']{
 	padding: 1px 0 0 20px;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_excel.png') left center no-repeat;
+	background: url('../images/fff_page_white_excel.png') left center no-repeat;
 }
 
 h1 a[href$='.xlsx'], h2 a[href$='.xlsx'], h3 a[href$='.xlsx']{
 	padding-right: 20px;
 	padding-left: 0;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_excel.png') right center no-repeat;
+	background: url('../images/fff_page_white_excel.png') right center no-repeat;
 }
 
 a[href$='.ppt'], a[href$='.pptx'], a[href$='.ppsx']{
 	padding: 1px 0 0 20px;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_powerpoint.png') left center no-repeat;
+	background: url('../images/fff_page_white_powerpoint.png') left center no-repeat;
 }
 
 h1 a[href$='.ppt'], h2 a[href$='.ppt'], h3 a[href$='.ppt'],
 h1 a[href$='.pptx'], h2 a[href$='.pptx'], h3 a[href$='.pptx']{
 	padding-right: 20px;
 	padding-left: 0;
-	background: url('https://assets.sdes.ucf.edu/images/icons/fff_page_white_powerpoint.png') right center no-repeat;
-}
-
-/* responsive tweaks ----------------------------------------------------------------------------------------------- */
-
-@media (max-width: 992px){ /* medium to large breakpoint */
-	.site-title small{
-		display: block;
-	}
-
-	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
-		float: none!important;
-	}
-}
-
-@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
-  .staff img, .news img{
-    width: auto;
-    margin: 1em auto;
-    float: none;
-  }
-
-  .staff .staff-content, .news .news-content{
-    margin: 0;
-  }
+	background: url('../images/fff_page_white_powerpoint.png') right center no-repeat;
 }
 
 /* Yamm!3 - Yet another megamenu for Bootstrap 3 / http://geedmo.github.com/yamm3 / Licensed under the MIT license - */
@@ -553,4 +548,24 @@ h1 a[href$='.pptx'], h2 a[href$='.pptx'], h3 a[href$='.pptx']{
 
 .validation-summary-valid {
     display: none;
+}
+
+/* responsive tweaks ----------------------------------------------------------------------------------------------- */
+
+@media (max-width: 992px){ /* medium to large breakpoint */
+	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
+		float: none!important;
+	}
+}
+
+@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
+  .staff img, .news img{
+    width: auto;
+    margin: 1em auto;
+    float: none;
+  }
+
+  .staff .staff-content, .news .news-content{
+    margin: 0;
+  }
 }
