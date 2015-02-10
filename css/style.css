@@ -459,6 +459,11 @@ h1 a[href$='.pptx'], h2 a[href$='.pptx'], h3 a[href$='.pptx']{
 	background: url('../images/fff_page_white_powerpoint.png') right center no-repeat;
 }
 
+.form-pills{
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
 /* Yamm!3 - Yet another megamenu for Bootstrap 3 / http://geedmo.github.com/yamm3 / Licensed under the MIT license - */
 
 .yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
