@@ -115,8 +115,8 @@ li:empty{
 	margin-top: 1.5em;
 }
 
-.site-content > .page-header:first-child{
-	margin-top: 30px;
+.site-billboard + .site-content > .page-header:first-child{
+	margin-top: 10px;
 }
 
 .site-content-end{
