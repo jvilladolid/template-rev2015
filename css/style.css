@@ -110,6 +110,14 @@ li:empty{
 	background: url("../images/ajax-loader.gif") no-repeat center center #fff;
 }
 
+.site-billboard.theme-default .nivoSlider{
+	margin-bottom: 0;
+}
+
+.site-billboard #slider img{
+	border-radius: 10px;
+}
+
 .site-content{
 	min-height: 425px;
 	margin-top: 1.5em;
