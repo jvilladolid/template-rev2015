@@ -651,14 +651,25 @@ div.top-b{
 	}
 }
 
-@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
-  .staff img, .news img{
-    width: auto;
-    margin: 1em auto;
-    float: none;
-  }
+@media (max-width: 768px){ /* medium to large breakpoint */
+	.site-title{
+		font-size: 2.75em;
+	}
 
-  .staff .staff-content, .news .news-content{
-    margin: 0;
-  }
+	.site-sub-footer > .container > .row > .text-right{
+		margin-top: 1em;
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
+	.staff img, .news img{
+		width: auto;
+		margin: 1em auto;
+		float: none;
+	}
+
+	.staff .staff-content, .news .news-content{
+		margin: 0;
+	}
 }
