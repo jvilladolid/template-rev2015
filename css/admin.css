@@ -33,65 +33,65 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .site-nav.navbar-default {
-  background: #4e5d6c;
-  border-color: transparent;
-  box-shadow: none;
+	background: #4e5d6c;
+	border-color: transparent;
+	box-shadow: none;
 }
 
 .site-nav.navbar-default .navbar-brand {
-  color: #ebebeb;
+	color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-brand:hover,
 .site-nav.navbar-default .navbar-brand:focus {
-  color: #ebebeb;
-  background-color: transparent;
+	color: #ebebeb;
+	background-color: transparent;
 }
 
 .site-nav.navbar-default .navbar-text {
-  color: #ebebeb;
+	color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-nav > li > a {
-  color: #ebebeb;
+	color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-nav > li > a:hover,
 .site-nav.navbar-default .navbar-nav > li > a:focus {
-  color: #ebebeb;
-  background-color: #485563;
+	color: #ebebeb;
+	background-color: #485563;
 }
 
-.site-nav.navbar-default .navbar-nav > .active > a,
-.site-nav.navbar-default .navbar-nav > .active > a:hover,
-.site-nav.navbar-default .navbar-nav > .active > a:focus {
-  color: #ebebeb;
-  background-color: #485563;
+.site-nav.navbar-default .navbar-nav > li.active > a,
+.site-nav.navbar-default .navbar-nav > li.active > a:hover,
+.site-nav.navbar-default .navbar-nav > li.active > a:focus {
+	color: #ebebeb;
+	background-color: #485563;
 }
 
 .site-nav.navbar-default .navbar-toggle {
-  border-color: transparent;
+	border-color: transparent;
 }
 
 .site-nav.navbar-default .navbar-toggle:hover,
 .site-nav.navbar-default .navbar-toggle:focus {
-  background-color: #485563;
+	background-color: #485563;
 }
 
 .site-nav.navbar-default .navbar-toggle .icon-bar {
-  background-color: #ebebeb;
+	background-color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-collapse,
 .site-nav.navbar-default .navbar-form {
-  border-color: transparent;
+	border-color: transparent;
 }
 
 .site-nav.navbar-default .navbar-nav > .open > a,
 .site-nav.navbar-default .navbar-nav > .open > a:hover,
 .site-nav.navbar-default .navbar-nav > .open > a:focus {
-  background-color: #485563;
-  color: #ebebeb;
+	background-color: #485563;
+	color: #ebebeb;
 }
 
 .site-billboard #slider{
