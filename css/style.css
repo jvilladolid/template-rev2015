@@ -440,6 +440,12 @@ a.external{
 	background: url('../images/ex-link.png') right center no-repeat;
 }
 
+a.external.list-group-item{
+	padding: 10px 15px;
+	background-image: url('../images/ex-link.png') no-repeat;
+	background-position: 95% center;
+}
+
 a[href$='.pdf'].noicon{
 	background: none;
 	padding: 0;
@@ -447,7 +453,13 @@ a[href$='.pdf'].noicon{
 
 a[href$='.pdf']{
 	padding: 1px 0 0 20px;
-	background: url('../images/fff_page_white_acrobat.png') left center no-repeat;
+	background: url('../images/fff_page_white_acrobat.png') no-repeat;
+}
+
+a[href$='.pdf'].list-group-item{
+	padding: 10px 15px;
+	background-image: url('../images/fff_page_white_acrobat.png') no-repeat;
+	background-position: 95% center;
 }
 
 h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
@@ -456,14 +468,26 @@ h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{
 	background: url('../images/fff_page_white_acrobat.png') right center no-repeat;
 }
 
-a[href$='.doc'], a[href$='.docx'], a[href$='.rtf']{
+a[href$='.docx']{
 	padding: 1px 0 0 20px;
 	background: url('../images/fff_page_white_word.png') left center no-repeat;
 }
 
-a[href$='.xls'], a[href$='.xlsx'], a[href$='.xlsm']{
+a[href$='.docx'].list-group-item{
+	padding: 10px 15px;
+	background-image: url('../images/fff_page_white_word.png') no-repeat;
+	background-position: 95% center;
+}
+
+a[href$='.xlsx']{
 	padding: 1px 0 0 20px;
 	background: url('../images/fff_page_white_excel.png') left center no-repeat;
+}
+
+a[href$='.xlsx'].list-group-item{
+	padding: 10px 15px;
+	background-image: url('../images/fff_page_white_excel.png') no-repeat;
+	background-position: 95% center;
 }
 
 h1 a[href$='.xlsx'], h2 a[href$='.xlsx'], h3 a[href$='.xlsx']{
@@ -472,9 +496,15 @@ h1 a[href$='.xlsx'], h2 a[href$='.xlsx'], h3 a[href$='.xlsx']{
 	background: url('../images/fff_page_white_excel.png') right center no-repeat;
 }
 
-a[href$='.ppt'], a[href$='.pptx'], a[href$='.ppsx']{
+a[href$='.pptx']{
 	padding: 1px 0 0 20px;
 	background: url('../images/fff_page_white_powerpoint.png') left center no-repeat;
+}
+
+a[href$='.pptx'].list-group-item{
+	padding: 10px 15px;
+	background-image: url('../images/fff_page_white_powerpoint.png') no-repeat;
+	background-position: 95% center;
 }
 
 h1 a[href$='.ppt'], h2 a[href$='.ppt'], h3 a[href$='.ppt'],
