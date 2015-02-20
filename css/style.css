@@ -84,13 +84,21 @@ li:empty{
 	margin-bottom: 1em;
 }
 
+.site-nav.navbar.navbar-default.empty{
+	min-height: 10px;
+	height: 10px;
+}
+
 .site-nav.navbar-default .navbar-nav > li > a,
 .site-nav.navbar-default .navbar-text,
 .site-nav.navbar-default .navbar-link{
 	color: #000;
 }
 
-.site-nav.navbar-default .navbar-nav > li:hover{
+.site-nav.navbar-default .navbar-nav > li:hover,
+.site-nav.navbar-default .navbar-nav > li.active > a,
+.site-nav.navbar-default .navbar-nav > li.active > a:hover,
+.site-nav.navbar-default .navbar-nav > li.active > a:focus {
 	background-color: #fff;
 }
 
