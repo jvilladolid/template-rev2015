@@ -115,3 +115,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .site-sub-footer a:hover{
 	text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px){
+	.site-content{
+		padding: 0;
+	}
+}

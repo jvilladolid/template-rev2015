@@ -113,8 +113,6 @@ li:empty{
 .site-billboard #slider{
 	box-shadow: 0 2px 3px #aaa;
 	border-radius: 10px;
-	min-width: 1140px;
-	min-height: 318px;
 	background: url("../images/ajax-loader.gif") no-repeat center center #fff;
 }
 
@@ -659,6 +657,10 @@ div.top-b{
 	.site-sub-footer > .container > .row > .text-right{
 		margin-top: 1em;
 		text-align: left;
+	}
+
+	.page-header > .pull-right{
+		float: none!important;
 	}
 }
 
