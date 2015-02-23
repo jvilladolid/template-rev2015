@@ -122,6 +122,7 @@ li:empty{
 
 .site-billboard #slider img{
 	border-radius: 10px;
+	width: 100%;
 }
 
 .site-content{
@@ -393,7 +394,13 @@ ul.bullets > li > a:hover {
 	height: 1em;
 }
 
-/* generic classes ------------------------------------------------------------------------------------------------- */
+/* generic classes and fixes --------------------------------------------------------------------------------------- */
+
+.site-content .row > div > p:first-child,
+.site-content .row > div > h2:first-child,
+.site-content .row > div > h3:first-child {
+	margin-top: 0;
+}
 
 form .jumbotron{
 	background-color: #fffbec;
