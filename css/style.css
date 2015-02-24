@@ -76,6 +76,12 @@ li:empty{
 	text-decoration: none;
 }
 
+@media (max-width: 768px){ /* tiny breakpoint and below */
+	.site-title{
+		font-size: 2.75em;
+	}
+}
+
 .site-nav.navbar-default{
 	background-color: #fdf0b6;
 	border: 0;
@@ -106,23 +112,80 @@ li:empty{
 	margin-right: 0;
 }
 
+@media (max-width: 992px){ /* medium to large breakpoint */
+	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
+		float: none!important;
+	}
+}
+
 .site-billboard{
 	margin: 2em auto;
 }
 
-.site-billboard #slider{
+.site-billboard > img{
+	width: 100%;
+}
+
+.site-billboard > img, .site-billboard > #slider{
 	box-shadow: 0 2px 3px #aaa;
 	border-radius: 10px;
+}
+
+.site-billboard > #slider{
 	background: url("../images/ajax-loader.gif") no-repeat center center #fff;
+	height: 317px;
+}
+
+@media only screen and (max-width: 1200px){ /* medium breakpoint and smaller */
+	.site-billboard > #slider{
+		height: 247px;
+	}
+}
+
+@media only screen and (max-width: 992px){ /* small breakpoint and smaller */
+	.site-billboard > #slider{
+		height: 185px;
+	}
+}
+
+@media only screen and (max-width: 768px){ /* tiny breakpoint and smaller */
+	.site-billboard > #slider{
+		height: auto;
+	}
+}
+
+.site-billboard > #slider img{
+	border-radius: 10px;
+	width: 100%;
+	display: none;
 }
 
 .site-billboard.theme-default .nivoSlider{
 	margin-bottom: 0;
 }
 
-.site-billboard #slider img{
-	border-radius: 10px;
-	width: 100%;
+.nivo-title{
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+.nivo-strapline{
+	font-size: 1.25em;
+	padding: 0.1em 0;
+}
+
+.nivo-title, .nivo-strapline{
+	padding-left: 5px;
+}
+
+@media only screen and (max-width: 768px){ /* tiny breakpoint and smaller */
+	.nivo-title{
+		font-size: 1.25em;
+	}
+
+	.nivo-strapline{
+		font-size: 1em;
+	}
 }
 
 .site-content{
@@ -132,6 +195,12 @@ li:empty{
 
 .site-billboard + .site-content > .page-header:first-child{
 	margin-top: 10px;
+}
+
+@media (max-width: 768px){ /* tiny breakpoint and smaller */
+	.page-header > .pull-right{
+		float: none!important;
+	}
 }
 
 .site-content-end{
@@ -188,6 +257,14 @@ li:empty{
 	text-decoration: none;
 	color: #ccc;
 }
+
+@media (max-width: 768px){ /* tiny breakpoint and smaller */
+	.site-sub-footer > .container > .row > .text-right{
+		margin-top: 1em;
+		text-align: left;
+	}
+}
+
 
 /* components ------------------------------------------------------------------------------------------------------ */
 
@@ -276,10 +353,6 @@ li:empty{
 	background: url('../images/3bul.png') no-repeat center left;
 }
 
-.news .news-title a:hover{
-
-}
-
 .news .news-strapline{
 	font-size: 1.5em;
 }
@@ -292,6 +365,18 @@ li:empty{
 
 .news .news-summary{
 	padding: 1.25em 0;
+}
+
+@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
+	.staff img, .news img{
+		width: auto;
+		margin: 1em auto;
+		float: none;
+	}
+
+	.staff .staff-content, .news .news-content{
+		margin: 0;
+	}
 }
 
 /* ucf calendar widget */
@@ -646,39 +731,4 @@ div.top{
 
 div.top-b{
 	margin-bottom: 4px;
-}
-
-/* responsive tweaks ----------------------------------------------------------------------------------------------- */
-
-@media (max-width: 992px){ /* medium to large breakpoint */
-	.site-nav.navbar-default .navbar-text.navbar-right.translate-button{
-		float: none!important;
-	}
-}
-
-@media (max-width: 768px){ /* medium to large breakpoint */
-	.site-title{
-		font-size: 2.75em;
-	}
-
-	.site-sub-footer > .container > .row > .text-right{
-		margin-top: 1em;
-		text-align: left;
-	}
-
-	.page-header > .pull-right{
-		float: none!important;
-	}
-}
-
-@media only screen and (max-width: 500px){ /* arbitrary breakpoint */
-	.staff img, .news img{
-		width: auto;
-		margin: 1em auto;
-		float: none;
-	}
-
-	.staff .staff-content, .news .news-content{
-		margin: 0;
-	}
 }
