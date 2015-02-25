@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 .site-content{
-	min-height: 550px;
+	min-height: 665px;
+}
+
+.site-billboard + .site-content{
+	min-height: 315px;
 }
 
 .site-footer{
