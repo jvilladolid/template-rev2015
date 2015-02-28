@@ -188,6 +188,10 @@ li:empty{
 	}
 }
 
+.theme-default .nivo-controlNav{
+	padding: 15px 0 0!important;
+}
+
 .site-content{
 	min-height: 475px;
 }
@@ -532,9 +536,8 @@ label.error{
 	margin-bottom: 20px;
 }
 
-.hidden{
+.none{
 	display: none;
-	background: #ddd;
 }
 
 .mzero h1, .mzero h2, .mzero h3, .mzero h4, .mzero h5, .mzero h6{
@@ -560,13 +563,18 @@ a[href$='.pdf'].noicon{
 
 a[href$='.pdf']{
 	padding: 1px 0 0 20px;
-	background: url('../images/fff_page_white_acrobat.png') no-repeat;
+	background: url('../images/fff_page_white_acrobat.png') left center no-repeat;
 }
 
 a[href$='.pdf'].list-group-item{
 	padding: 10px 15px;
 	background-image: url('../images/fff_page_white_acrobat.png') no-repeat;
 	background-position: 95% center;
+}
+
+.nav-pills > li > a[href$='.pdf']{
+	padding-left: 30px;
+	background-position: 10px center;
 }
 
 h1 a[href$='.pdf'], h2 a[href$='.pdf'], h3 a[href$='.pdf']{

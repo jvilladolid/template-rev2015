@@ -19,16 +19,12 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	color: #2b3e50;
+	color: #333;
 }
 
 /* specific site elements ------------------------------------------------------------------------------------------ */
 
-.container.header{
-	margin: 2.5em auto 1.5em;
-}
-
-.site-title, .site-subtitle{
+.site-title, .site-subtitle {
 	color: #fff;
 }
 
@@ -38,55 +34,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	box-shadow: none;
 }
 
-.site-nav.navbar-default .navbar-brand {
+.site-nav.navbar-default .navbar-brand,
+.site-nav.navbar-default .navbar-text,
+.site-nav.navbar-default .navbar-nav > li > a {
 	color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-brand:hover,
 .site-nav.navbar-default .navbar-brand:focus {
-	color: #ebebeb;
 	background-color: transparent;
-}
-
-.site-nav.navbar-default .navbar-text {
-	color: #ebebeb;
-}
-
-.site-nav.navbar-default .navbar-nav > li > a {
 	color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-nav > li > a:hover,
-.site-nav.navbar-default .navbar-nav > li > a:focus {
-	color: #ebebeb;
-	background-color: #485563;
-}
-
+.site-nav.navbar-default .navbar-nav > li > a:focus,
 .site-nav.navbar-default .navbar-nav > li.active > a,
 .site-nav.navbar-default .navbar-nav > li.active > a:hover,
-.site-nav.navbar-default .navbar-nav > li.active > a:focus {
-	color: #ebebeb;
-	background-color: #485563;
-}
-
-.site-nav.navbar-default .navbar-toggle {
-	border-color: transparent;
-}
-
-.site-nav.navbar-default .navbar-toggle:hover,
-.site-nav.navbar-default .navbar-toggle:focus {
-	background-color: #485563;
-}
-
-.site-nav.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ebebeb;
-}
-
-.site-nav.navbar-default .navbar-collapse,
-.site-nav.navbar-default .navbar-form {
-	border-color: transparent;
-}
-
+.site-nav.navbar-default .navbar-nav > li.active > a:focus,
 .site-nav.navbar-default .navbar-nav > .open > a,
 .site-nav.navbar-default .navbar-nav > .open > a:hover,
 .site-nav.navbar-default .navbar-nav > .open > a:focus {
@@ -94,18 +58,33 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #ebebeb;
 }
 
+.site-nav.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.site-nav.navbar-default .navbar-toggle:hover,
+.site-nav.navbar-default .navbar-toggle:focus,
+.site-nav.navbar-default .navbar-toggle .icon-bar {
+	background-color: #485563;
+}
+
+.site-nav.navbar-default .navbar-collapse,
+.site-nav.navbar-default .navbar-form {
+	border-color: transparent;
+}
+
 .site-billboard #slider{
-	box-shadow: 0 2px 5px #333;
 	background-color: transparent;
+	box-shadow: 0 2px 5px #333;
 }
 
 .site-content{
-	margin: 2em auto 4em;
-	padding: 0 3em;
-	min-height: 600px;
 	background: #fff;
 	border-top: 30px solid #4e5d6c;
 	border-bottom: 30px solid #4e5d6c;
+	margin: 1.25em auto 4em;
+	min-height: 600px;
+	padding: 0 3em;
 }
 
 .site-sub-footer{
@@ -113,11 +92,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .site-sub-footer a:hover{
+	color: #fff;
 	text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px){
 	.site-content{
-		padding: 0;
+		padding: 0 15px;
 	}
 }
