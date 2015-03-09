@@ -63,9 +63,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .site-nav.navbar-default .navbar-toggle:hover,
-.site-nav.navbar-default .navbar-toggle:focus,
-.site-nav.navbar-default .navbar-toggle .icon-bar {
+.site-nav.navbar-default .navbar-toggle:focus {
 	background-color: #485563;
+}
+
+.site-nav.navbar-default .navbar-toggle .icon-bar{
+	background-color: #ebebeb;
 }
 
 .site-nav.navbar-default .navbar-collapse,
